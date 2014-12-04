@@ -84,6 +84,10 @@ button:hover {
   color: white;
 }
 
+.credits a {
+  color: white;
+}
+
 @media (min-width: 1024px) {
 
   #prince {
