@@ -1,47 +1,46 @@
 (function(){
 
   var generator = {
-    burns: [
-      "Don't be such a rhymin' hymen.",
-      "Don't have a crap attack.",
-      "Don't be such a tattle-tampon.",
-      "This is such a snoregasm.",
-      "That is literally the stupidest thing anyone has said in the history of mankind ever.",
-      "Don't be such a boob-punch.",
-      "Your face looks like math class.",
-      "Don't be such a prudeabega.",
-      "Later, square-bear.",
-      "You lame-pon."
+    tips: [
+      "Trap your princess: Physically corner her in a room, and eventually, in your life.",
+      "Insult your princess: insult her face, her body, her brain, her car. The lower her self-esteem, the higher your chances, bro. It's been biologically proven, by me!",
+      "Brag. Not lying, but close. Make up a story about how you single-handedly murdered a wild animal. Your story is going release a hormone deep inside her body called \"insatia.\" It makes women ovulate... for sex!",
+      "Dress like her dad, it releases a hormone called moanatonin.",
+      "When you get into an elevator with a woman, press a higher number than her, and then make a big deal about it.",
+      "Push her in a lake!",
+      "Be one of the tallest guys in the bar, and then brag about how long your but crack is.",
+      "Use the word \"idiot\".",
+      "NEVER make her pancakes, force her to make YOU pancakes, in the middle of the night."
     ],
-    getBurn: function(index) {
+    getTip: function(index) {
       history.pushState(null, null, '#' + index);
-      return this.burns[index];
+      return this.tips[index];
     },
-    getRandomBurn: function() {
-      var index = Math.floor(Math.random() * this.burns.length);
-      return this.getBurn(index);
+    getRandomTip: function() {
+      var index = Math.floor(Math.random() * this.tips.length);
+      return this.getTip(index);
     },
-    getBurnFromHash: function() {
+    getTipFromHash: function() {
       var index = parseInt(window.location.hash.substr(1));
-      return this.getBurn(index);
+      return this.getTip(index);
     },
     render: function(string) {
-      var el = document.getElementById('burn');
+      var el = document.getElementById('tip');
       el.innerHTML = string;
     },
     addEventListeners: function() {
       var self = this;
-      var el = document.getElementById('getBurn');
+      var el = document.getElementById('getTip');
       el.addEventListener('click', function(){
-        self.render(self.getRandomBurn());
+        self.render(self.getRandomTip());
       }, false);
     },
     init: function() {
       this.addEventListeners();
       if (window.location.hash) {
-        this.render(this.getBurnFromHash());
+        this.render(this.getTipFromHash());
       } else {
-        this.render(this.getRandomBurn());
+        this.render(this.getRandomTip());
       }
     }
   }
