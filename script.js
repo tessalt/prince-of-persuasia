@@ -8,7 +8,7 @@
       "Dress like her dad, it releases a hormone called moanatonin.",
       "When you get into an elevator with a woman, press a higher number than her, and then make a big deal about it.",
       "Push her in a lake!",
-      "Be one of the tallest guys in the bar, and then brag about how long your but crack is.",
+      "Be one of the tallest guys in the bar, and then brag about how long your butt crack is.",
       "Use the word \"idiot\".",
       "NEVER make her pancakes, force her to make YOU pancakes, in the middle of the night."
     ],
